@@ -1,4 +1,5 @@
 #pragma once
+#include <vector>
 #include "raylib.h"
 #include "raymath.h"
 
@@ -7,7 +8,7 @@ class Rooms
     private:
     Texture2D background, wallTexture, groundTexture;
     int width, height;
-    vector<vector<int>> tileData;
+    std::vector<std::vector<int>> tileData;
 };
 
 

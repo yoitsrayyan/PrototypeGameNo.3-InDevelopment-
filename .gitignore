@@ -1,0 +1,18 @@
+# Build artifacts
+prototype
+*.o
+*.obj
+*.out
+build/
+bin/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.code-workspace
+*.swp
+*.swo
+
+# OS metadata
+.DS_Store
+Thumbs.db
