@@ -1,30 +1,33 @@
 # Prototype Game No. 3
 
-Prototype Game No. 3 is an early C++/Raylib game prototype exploring a
-tile-based room system, player movement, textures, and a real-time game loop.
+Prototype Game No. 3 is an unfinished C++/Raylib experiment. The repository
+currently contains the starting point for a native game project rather than a
+playable game.
 
-## Current direction
+## Current state
 
-The prototype currently contains the initial structure for:
+The code currently:
 
-- Raylib window and audio initialization
-- A `Rooms` class for tile and texture data
-- A `Player` class for position, sprite, movement, and drawing
-- A 60 FPS update target
+- Initializes an 800x600 Raylib window and audio device
+- Sets a target frame rate of 60 FPS
+- Defines early `Rooms` and `Player` class declarations for future work
+
+The game loop, rendering, input handling, room loading, player behavior, and
+resource cleanup are not implemented yet.
 
 ## Technologies
 
-- C++
+- C++17
 - Raylib
 - Raymath
 
 ## Build
 
-Install Raylib and a C++ compiler, then compile the source with the include
-and library flags required by your platform. A typical Linux command is:
+Install Raylib and a C++ compiler, then compile from the repository root with
+the flags required by your platform. A typical Linux command is:
 
 ```bash
-g++ -std=c++17 main.cpp -o prototype \
+g++ -std=c++17 src/main.cpp -Isrc -o prototype \
   -lraylib -lGL -lm -lpthread -ldl -lrt -lX11
 ```
 
@@ -36,6 +39,5 @@ Run it with:
 
 ## Project status
 
-This repository is an in-development prototype, not a finished game. It is
-kept as a record of experimentation with native game loops, Raylib, player
-state, and room-based level structure.
+This is an in-development prototype kept as a record of early exploration
+with native game setup, Raylib, player state, and room-based level structure.
